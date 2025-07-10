@@ -11,10 +11,10 @@ que se puede escalar a Deep Learning
 
 # Estrutura del proyecto
 calculadora
-|
-|- static/
-    |- script.js
-    |- style.css
-|- templates/
-    |- index.html
-|- app.py
+    |
+    |- static/
+        |- script.js
+        |- style.css
+    |- templates/
+        |- index.html
+    |- app.py
