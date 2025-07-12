@@ -1,0 +1,85 @@
+/* Centrar la calculadora en pantalla */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #686060;
+}
+
+/* Heredar el formato de padre */
+button, input, select, textarea {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* Contenedor principal */
+.calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 30px rgb(22, 22, 22);
+}
+
+/* Pantalla de la calculadora */
+.display {
+    background-color: #000;
+    color: #48ff00;
+    font-size: 3rem;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    min-height: 50px;
+    box-sizing: border-box;
+    overflow-x: auto; /*Revisar documentacion*/
+}
+
+/* Grid de botones */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Botones estándar */
+.btn {
+    background-color: #615f5f;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* Hover en botones */
+.btn:hover {
+    background-color: #9b9a9a;
+}
+
+/* Botones de operadores (+ - × ÷) */
+.operator {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #bd7502;
+}
+
+/* Botón igual ocupa toda la fila */
+.equal {
+    grid-column: span 4;
+    background-color: #34c759;
+    color: #fff;
+}
+
+.iqual:hover {
+    background-color: #28a745;
+}
